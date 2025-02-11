@@ -2,12 +2,12 @@ Step 1:
 cd [Json File Directory]
 
 Step 2:
-mongoimport --db ChinookDB --collection Artists --file chinook_filtered_artists_albums_tracks.json --jsonArray
+mongoimport --db [database name] --collection [collection_name] --file [filename].json --jsonArray
 Breaking Down the Command:
 mongoimport → The tool used to import data into MongoDB.
---db ChinookDB → Specifies the database name (ChinookDB).
---collection Artists → Defines the collection (table) where data will be stored. You can change this to Albums or Tracks when importing different parts of the data.
---file chinook_filtered_artists_albums_tracks.json → Points to the JSON file being imported.
+--db [database name] → Specifies the database name (ChinookDB).
+--collection [collection name] → Defines the collection (table) where data will be stored. You can change this to Albums or Tracks when importing different parts of the data.
+--file [filename].json → Points to the JSON file being imported.
 --jsonArray → Tells MongoDB that the JSON file contains an array of objects.
 
 Step 3:
